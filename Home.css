@@ -1,0 +1,21 @@
+.border{
+    /* background-color: black; */
+     width: 600px;
+     border: 8px solid rgb(0, 0, 0);
+     /* padding: 10em; */
+     margin-top: 10em;
+     margin-left: 25em;
+     margin-bottom: 10em;
+     
+   
+ }
+ header{
+    
+ padding-left: 4em;
+ padding-top: 1em;
+ }
+ .Main{
+    padding-top: 5em;
+ padding-left: 11em;
+ /* margin-left: 30em; */
+ }

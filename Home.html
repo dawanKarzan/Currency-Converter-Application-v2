@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Currency Converter Application</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body class="border">
+    <header>
+        <h1>Currency Converter Application</h1>
+    </header>
+
+    <main class="Main">
+        <form action="Home.php" id="currency" method="post" onsubmit="return handleFormSubmit()">
+            
+            <input type="number" name="finput" id="number_input" oninput="updateSecondInput(this.value)">
+            <select name="fcurrency" id="first_currency" oninput="assignFirstCurrency(this.value)">
+              <option value="USD" >USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="JPY">JPY</option>
+            </select>
+            <br>
+            <span style="font-size: 25px; padding-left: 3em;">&#8595;</span>
+            <br>
+            
+            <input type="number" id="second_input" readonly>
+            <select name="scurrency" id="second_currency" oninput="assignSecondCurrency(this.value)">
+              <option value="USD" >USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="JPY">JPY</option>
+            </select>
+           
+          </form>
+         
+          
+    </main>
+
+    <footer>
+    </footer>
+        <script src="Home.js"></script>
+</body>
+</html>
